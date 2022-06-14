@@ -18,7 +18,7 @@ var checkDates = function() {
 
     // a loop for each time block
     $(".time-block").each(function () {
-        // splits the id attr. into two parts to give a value to check
+        // splits the id attr. into two parts to give a value to check, then starts at the first one
         var timeBlock = parseInt($(this).attr("id").split("hour")[1]);
         // removes classes for automatic checks
         $(this).removeClass("past present future")
